@@ -15,5 +15,3 @@ def 去掉文件名A字符前的全部字符(path, A):
         原文件完整路径 = os.path.join(path, f)
         新文件完整路径 = os.path.join(path, 新文件名)
         os.rename(原文件完整路径, 新文件完整路径)
-
-
