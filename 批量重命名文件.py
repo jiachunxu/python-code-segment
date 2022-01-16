@@ -3,9 +3,9 @@
 import os
 
 
-def 去掉文件名A字符前的全部内容(path, A):
+def 去掉文件名A字符前的全部字符(path, A):
     """
-    
+
     :param path: 文件路径
     :param A: 文件名第一个有用字符
     """
