@@ -4,7 +4,7 @@ import os
 
 
 def batch_rename(path, A):
-    # 去掉A字符前面所有字段
+    # 去掉文件名A字符前面所有字段
     files = os.listdir(path)
     for f in files:
         新文件名 = f[f.index(A):]
