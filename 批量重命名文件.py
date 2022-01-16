@@ -3,8 +3,12 @@
 import os
 
 
-def batch_rename(path, A):
-    # 去掉文件名A字符前面所有字段
+def 去掉文件名A字符前的全部内容(path, A):
+    """
+    
+    :param path: 文件路径
+    :param A: 文件名第一个有用字符
+    """
     files = os.listdir(path)
     for f in files:
         新文件名 = f[f.index(A):]
@@ -12,6 +16,4 @@ def batch_rename(path, A):
         新文件完整路径 = os.path.join(path, 新文件名)
         os.rename(原文件完整路径, 新文件完整路径)
 
-# 测试
-# path = r"C:\Users\adminjia\Desktop\雪中悍刀行"
-# batch_rename(path, '雪')
+
